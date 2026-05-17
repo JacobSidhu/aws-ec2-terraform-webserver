@@ -30,3 +30,55 @@ The project focuses on:
 [View editable architecture diagram in Eraser](https://app.eraser.io/workspace/10SDNiSyS0AF5Qn40GuA?origin=share)
 
 ---
+
+## What This Project Deploys
+
+This Terraform project provisions:
+
+- AWS VPC
+- Public Subnet
+- Internet Gateway
+- Public Route Table
+- Route Table Association
+- Security Group
+- SSH Key Pair
+- Ubuntu EC2 Instance
+- Nginx Web Server installed using EC2 user data
+
+---
+
+## Technology Stack
+
+- AWS
+- Terraform
+- EC2
+- VPC
+- Security Groups
+- Ubuntu Linux
+- Nginx
+- Bash
+- GitHub
+
+---
+
+## Architecture Flow
+
+User traffic flows through the following path:
+
+```text
+User Browser
+    ↓
+Internet
+    ↓
+AWS Internet Gateway
+    ↓
+Public Route Table
+    ↓
+Public Subnet
+    ↓
+Security Group
+    ↓
+EC2 Ubuntu Instance
+    ↓
+Nginx Web Server
+```
