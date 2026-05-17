@@ -1,0 +1,12 @@
+aws_region         = "eu-west-2"
+project_name       = "aws-ec2-terraform-webserver"
+vpc_cidr           = "10.0.0.0/16"
+public_subnet_cidr = "10.0.1.0/24"
+instance_type      = "t2.micro"
+
+# Replace this with your own public IP in CIDR format.
+# Example: "86.150.20.10/32"
+ssh_allowed_cidr   = "YOUR_PUBLIC_IP/32"
+
+# Path to your SSH public key
+ssh_public_key_path = "~/.ssh/id_rsa.pub"
