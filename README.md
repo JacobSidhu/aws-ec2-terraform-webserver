@@ -22,3 +22,11 @@ The project focuses on:
 - Testing and documenting a small cloud deployment
 
 ---
+
+## Architecture
+
+![AWS EC2 Terraform Architecture](docs/architecture/aws-ec2-terraform-webserver-architecture.png)
+
+[View editable architecture diagram in Eraser](YOUR_ERASER_LINK_HERE)
+
+---
