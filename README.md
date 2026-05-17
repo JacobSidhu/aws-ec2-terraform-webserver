@@ -27,6 +27,6 @@ The project focuses on:
 
 ![AWS EC2 Terraform Architecture](docs/architecture/aws-ec2-terraform-webserver-architecture.png)
 
-[View editable architecture diagram in Eraser](YOUR_ERASER_LINK_HERE)
+[View editable architecture diagram in Eraser](https://app.eraser.io/workspace/10SDNiSyS0AF5Qn40GuA?origin=share)
 
 ---
