@@ -71,3 +71,10 @@ resource "aws_route_table_association" "public" {
   subnet_id      = aws_subnet.public.id
   route_table_id = aws_route_table.public.id
 }
+
+resource "aws_key_pair" "web_key" {
+  key_name   = "${var.project_name}-key"
+  public_key = file(var.ssh_public_key_path)
+
+  tags = local.common_tags
+}
