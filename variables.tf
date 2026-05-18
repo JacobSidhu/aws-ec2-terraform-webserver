@@ -32,3 +32,9 @@ variable "ssh_public_key_path" {
   description = "Path to the local SSH public key"
   type        = string
 }
+
+variable "aws-cli-profile" {
+  description = "AWS CLI profile to use for authentication (optional)"
+  type        = string
+  default     = null
+}
