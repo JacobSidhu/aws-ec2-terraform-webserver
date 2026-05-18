@@ -108,7 +108,7 @@ resource "aws_security_group" "web_sg" {
 
 resource "aws_key_pair" "web_key" {
   key_name   = "${var.project_name}-key"
-  public_key = file(var.ssh_public_key_path)
+  public_key = file(pathexpand(var.ssh_public_key_path))
 
   tags = local.common_tags
 }
