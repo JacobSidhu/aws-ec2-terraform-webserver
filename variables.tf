@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "aws_profile_username" {
   description = "AWS profile used for resource managhement."
-  type = string
+  type        = string
 }
 
 variable "project_name" {
