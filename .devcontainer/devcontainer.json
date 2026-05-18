@@ -1,0 +1,34 @@
+{
+  "name": "AWS EC2 Terraform Web Server",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/aws-cli:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "hashicorp.terraform",
+        "amazonwebservices.aws-toolkit-vscode",
+        "redhat.vscode-yaml",
+        "timonwong.shellcheck",
+        "streetsidesoftware.code-spell-checker",
+        "editorconfig.editorconfig"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "files.trimTrailingWhitespace": true,
+        "terraform.languageServer.enable": true,
+        "terraform.languageServer.args": [
+          "serve"
+        ]
+      }
+    }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y curl unzip jq tree git ca-certificates gnupg lsb-release && terraform version && aws --version",
+  "remoteUser": "vscode"
+}
